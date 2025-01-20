@@ -1,0 +1,16 @@
+INSERT INTO promotion (id, name, start_date, end_date, discount, description) VALUES
+(1, 'Product 1', '2025-01-01', '2025-12-31', 10, 'Discounted product 1'),
+(2, 'Product 2', '2025-01-01', '2025-12-31', 15, 'Discounted product 2'),
+(3, 'Product 3', '2025-02-01', '2025-06-30', 5, 'Limited time offer for product 3'),
+(4, 'Product 4', '2025-03-01', '2025-12-31', 20, 'Product 4 with 20% off'),
+(5, 'Product 5', '2025-01-01', '2025-12-31', 0, 'No discount available'),
+(6, 'Product 6', '2025-01-15', '2025-07-15', 25, 'Special offer for product 6'),
+(7, 'Product 7', '2025-04-01', '2025-10-01', 30, 'Seasonal sale for product 7'),
+(8, 'Product 8', '2025-01-01', '2025-12-31', 10, 'Buy one get one free on product 8'),
+(9, 'Product 9', '2025-05-01', '2025-09-01', 50, 'Half-price offer for product 9'),
+(10, 'Product 10', '2025-01-01', '2025-12-31', 5, 'Discounted rate for product 10'),
+(11, 'Product 11', '2025-01-01', '2025-12-31', 10, 'Exclusive product 11 offer'),
+(12, 'Product 12', '2025-02-15', '2025-08-15', 15, 'Seasonal offer for product 12'),
+(13, 'Product 13', '2025-03-01', '2025-09-01', 20, 'Get 20% off on product 13'),
+(14, 'Product 14', '2025-01-01', '2025-12-31', 0, 'Regular product, no discount'),
+(15, 'Product 15', '2025-04-01', '2025-10-01', 30, 'Special discount on product 15');

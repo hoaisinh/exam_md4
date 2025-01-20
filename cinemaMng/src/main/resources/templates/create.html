@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="content col-6 m-auto bg-light shadow shadow-sm rounded rounded-lg p-3">
+    <h1 class="text-center">Create Promotion</h1>
+    <form th:action="@{/create}" method="post" class="row" th:object="${promotion}">
+        <div class="form-group col-12">
+            <input type="text" class="form-control" name="name" placeholder="Name" th:field="*{name}">
+            <small class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></small>
+        </div>
+        <div class="form-group col-6">
+            <input type="date" class="form-control" name="startDate" placeholder="Start Date" th:field="*{startDate}">
+            <small class="text-danger" th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}"></small>
+
+        </div>
+        <div class="form-group col-6">
+            <input type="date" class="form-control" name="endDate" placeholder="End Date" th:field="*{endDate}">
+            <small class="text-danger" th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"></small>
+        </div>
+        <div class="form-group col-12">
+            <input type="number" class="form-control" name="discount" placeholder="Discount" th:field="*{discount}">
+            <small class="text-danger" th:if="${#fields.hasErrors('discount')}" th:errors="*{discount}"></small>
+        </div>
+        <div class="form-group col-12">
+            <input type="text" class="form-control" name="description" placeholder="Description" th:field="*{description}">
+            <small class="text-danger" th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></small>
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm mx-2" style="height: fit-content">Save</button>
+        <a th:href="@{/}" class="btn btn-secondary btn-sm mx-2" style="height: fit-content">Cancel</a>
+    </form>
+</div>
+
+</body>
+<script>
+
+</script>
+</html>
